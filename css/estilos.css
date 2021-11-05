@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* paleta de colores*/
+  :root{
+    --verdin: #a0e0bd;
+    --rosin: #FFF6F0;
+    --cremin: #F5DDD5;
+    --blackin: #000000;
+    --cafesin: #C2AFA9;
+}
+
+  
+body{
+  font-size: 10px ;
+  font-family: 'Courgette', cursive;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+  a{
+    text-decoration: none;
+
+}
+
+ /* Fondo*/
+  
+ 
+  body {
+    background: #C2AFA9;
+    background: linear-gradient(183deg, #ffffff 0%, #D5F5EE 100%);
+  }
+  
+  .redondear {
+    border-radius: 1.5rem;
+  }
+  
+
+  p{
+    font-size: 12px;
+}
+
+.contenido-header .fondo {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    /*background-image: url(src="img");*/ 
+}
+
+.contenido-header .texto{
+    width: 100vw;
+    height: 100vh;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: 'Fjalla One',serif;
+    font-style: Blod 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    mix-blend-mode: multiply;
+}
+    
+
+.menu {
+    background-color: var(--verdin);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fjalla One',s
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.menu a{
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 20px;
+        background-color: var(--verdin);
+        margin: 0 60px;
+        transition: .5s ease all;
+        color: var(--blackin);
+        text-decoration: none;
+
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: var(--cremin);
+}
+
+
+
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+
+.contenedor-titulo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo-controles h3{
+        color:  #78daa4;
+        font-size: 30px;
+}
+
+
+.contenedor-titulo-controles .indicadores button{
+    background: #000000;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button:hover{
+    background: #F5DDD5;
+    
+}
+
+
+.fotos-album{
+    margin-bottom: 70px;
+
+}
+
+.fotos-album .contenedor-principal {
+display: flex;
+align-items: center;
+position: relative;
+} 
+
+
+.fotos-album .contenedor-principal .flecha-izq, 
+.fotos-album .contenedor-principal .flecha-der {
+    position: absolute;
+    border:none;
+    background:rgba(0,0,0,0.5);
+    font-size:40px;
+    height: 50%;
+    top: calc(50% - 25%); 
+    line-height: 40px;
+    width: 50px;
+    color: #FFF6F0;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.fotos-album .contenedor-principal .flecha-izq:hover, 
+.fotos-album .contenedor-principal .flecha-der:hover {
+    background: rgba(0, 0, 0, 1);
+
+}
+
+.fotos-album .contenedor-principal .flecha-izq {
+    left: 0;
+}
+
+.fotos-album .contenedor-principal .flecha-der {
+    right: 0;
+}
+
+.fotos-album .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.fotos-album .contenedor-carousel .carousel {
+display: flex;
+flex-wrap: nowrap;
+}
+
+.fotos-album .contenedor-carousel .carousel .fotos {
+min-width: 50%;
+transition: .3s ease all;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.fotos-album .contenedor-carousel .carousel .fotos.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.fotos-album .contenedor-carousel .carousel .fotos img {
+width: 100%;
+vertical-align: top;
+}
+
